@@ -3,20 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalculadoraComponent } from './calculadora/calculadora.component';
-import { ScreenComponent } from './calculadora/components/screen/screen.component';
-import { ButtonComponent } from './calculadora/components/button/button.component';
+import { CalculadoraModule } from './calculadora/calculadora.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculadoraComponent,
-    ScreenComponent,
-    ButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CalculadoraModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

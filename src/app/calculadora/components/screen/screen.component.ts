@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-screen',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './screen.component.css'
 })
 export class ScreenComponent {
-  public inputValue:string = '';
+  @Input() handleScreen!:string;
+  @Input() inputValue!:string|number;
+  @Input() dato!: number;
 }
